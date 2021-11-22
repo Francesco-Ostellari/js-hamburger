@@ -16,6 +16,15 @@ iconaHamburger.addEventListener('click', function () {
   hamburgerMenu.style.display = 'block';
 })
 
+// cambio colore in hover all'icona dell'hamburger menu
+iconaHamburger.addEventListener('mouseover', function () {
+  iconaHamburger.style.color = "magenta";
+})
+
+iconaHamburger.addEventListener('mouseout', function () {
+  iconaHamburger.style.color = "gray";
+})
+
 //dichiaro variabile per l'icona che chiude l'hamburger menu
 const hamburgerClose = document.querySelector('.fa-times');
 console.log(hamburgerClose);
@@ -23,4 +32,14 @@ console.log(hamburgerClose);
 //quando clicco l'icona di chiusura del menu, l'hamburger menu diventa display none
 hamburgerClose.addEventListener('click', function () {
   hamburgerMenu.style.display = 'none';
+})
+
+
+// cambio colore in hover all'icona della chiusura dell'hamburger menu
+hamburgerClose.addEventListener('mouseover', function () {
+  hamburgerClose.style.color = "magenta";
+})
+
+hamburgerClose.addEventListener('mouseout', function () {
+  hamburgerClose.style.color = "white";
 })
