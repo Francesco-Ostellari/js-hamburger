@@ -15,3 +15,12 @@ console.log(hamburgerMenu);
 iconaHamburger.addEventListener('click', function () {
   hamburgerMenu.style.display = 'block';
 })
+
+//dichiaro variabile per l'icona che chiude l'hamburger menu
+const hamburgerClose = document.querySelector('.fa-times');
+console.log(hamburgerClose);
+
+//quando clicco l'icona di chiusura del menu, l'hamburger menu diventa display none
+hamburgerClose.addEventListener('click', function () {
+  hamburgerMenu.style.display = 'none';
+})
