@@ -43,3 +43,13 @@ hamburgerClose.addEventListener('mouseover', function () {
 hamburgerClose.addEventListener('mouseout', function () {
   hamburgerClose.style.color = "white";
 })
+
+// aggiungere un'altra voce al menu usando js
+const ul = document.querySelector ("ul");
+const li = document.createElement ("li");
+const a = document.createElement ("a");
+console.log (li);
+a.append("Contatti");
+a.href ="#";
+li.append(a);
+ul.prepend(li);
